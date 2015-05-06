@@ -60,7 +60,7 @@ class SwipeView: UIView {
             self.transform = CGAffineTransformMakeRotation(rotationAngle)
             self.center = CGPointMake(self.originalPoint!.x + distance.x , self.originalPoint!.y + distance.y)
         case UIGestureRecognizerState.Ended:
-            if distance.x < self.frame.width/4 {
+            if abs(distance.x) < self.frame.width/4 {
                 self.resetViewPositionAndTransformations()
             } else {
                 swipe(distance.x > 0 ? .Right : .Left)
