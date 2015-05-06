@@ -14,6 +14,9 @@
 		D1691BAE1AF53D2800D6B46C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1691BAD1AF53D2800D6B46C /* Images.xcassets */; };
 		D1691BB11AF53D2800D6B46C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1691BAF1AF53D2800D6B46C /* LaunchScreen.xib */; };
 		D1691BBD1AF53D2800D6B46C /* BiteMeDateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1691BBC1AF53D2800D6B46C /* BiteMeDateTests.swift */; };
+		D1691BC81AF53DD300D6B46C /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1691BC71AF53DD300D6B46C /* CardView.swift */; };
+		D1696A621AF6684800B9FD80 /* SwipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1696A611AF6684800B9FD80 /* SwipeView.swift */; };
+		D1696A671AF672F900B9FD80 /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1696A661AF672F900B9FD80 /* CardsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +41,9 @@
 		D1691BB61AF53D2800D6B46C /* BiteMeDateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BiteMeDateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1691BBB1AF53D2800D6B46C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D1691BBC1AF53D2800D6B46C /* BiteMeDateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiteMeDateTests.swift; sourceTree = "<group>"; };
+		D1691BC71AF53DD300D6B46C /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		D1696A611AF6684800B9FD80 /* SwipeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeView.swift; sourceTree = "<group>"; };
+		D1696A661AF672F900B9FD80 /* CardsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CardsViewController.swift; path = ../CardsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,8 +85,9 @@
 		D1691BA01AF53D2800D6B46C /* BiteMeDate */ = {
 			isa = PBXGroup;
 			children = (
+				D1691BC61AF53DBF00D6B46C /* Views */,
 				D1691BA31AF53D2800D6B46C /* AppDelegate.swift */,
-				D1691BA81AF53D2800D6B46C /* ViewController.swift */,
+				D1696A651AF6728900B9FD80 /* ViewControllers */,
 				D1691BAA1AF53D2800D6B46C /* Main.storyboard */,
 				D1691BAD1AF53D2800D6B46C /* Images.xcassets */,
 				D1691BAF1AF53D2800D6B46C /* LaunchScreen.xib */,
@@ -113,6 +120,24 @@
 				D1691BBB1AF53D2800D6B46C /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D1691BC61AF53DBF00D6B46C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D1691BC71AF53DD300D6B46C /* CardView.swift */,
+				D1696A611AF6684800B9FD80 /* SwipeView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		D1696A651AF6728900B9FD80 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D1696A661AF672F900B9FD80 /* CardsViewController.swift */,
+				D1691BA81AF53D2800D6B46C /* ViewController.swift */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,6 +242,9 @@
 			files = (
 				D1691BA91AF53D2800D6B46C /* ViewController.swift in Sources */,
 				D1691BA41AF53D2800D6B46C /* AppDelegate.swift in Sources */,
+				D1696A671AF672F900B9FD80 /* CardsViewController.swift in Sources */,
+				D1691BC81AF53DD300D6B46C /* CardView.swift in Sources */,
+				D1696A621AF6684800B9FD80 /* SwipeView.swift in Sources */,
 				D1691BA71AF53D2800D6B46C /* BiteMeDate.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -411,6 +439,7 @@
 				D1691BC21AF53D2800D6B46C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D1691BC31AF53D2800D6B46C /* Build configuration list for PBXNativeTarget "BiteMeDateTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +448,7 @@
 				D1691BC51AF53D2800D6B46C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
